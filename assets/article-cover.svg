@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Skill Funding Helper cover">
+  <rect width="1200" height="675" fill="#f7f4ee"/>
+  <rect x="64" y="58" width="1072" height="559" rx="8" fill="#fffdf8" stroke="#1f2937" stroke-width="2"/>
+  <rect x="94" y="92" width="330" height="491" rx="8" fill="#18202b"/>
+  <text x="126" y="150" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">SKILL.md</text>
+  <text x="126" y="202" font-family="Menlo, monospace" font-size="20" fill="#9ae6b4">name funding-helper</text>
+  <text x="126" y="238" font-family="Menlo, monospace" font-size="20" fill="#93c5fd">description sponsor links</text>
+  <text x="126" y="310" font-family="Menlo, monospace" font-size="20" fill="#fef08a">README support block</text>
+  <text x="126" y="346" font-family="Menlo, monospace" font-size="20" fill="#fca5a5">FUNDING.yml</text>
+  <text x="126" y="382" font-family="Menlo, monospace" font-size="20" fill="#c4b5fd">publish kit</text>
+  <circle cx="515" cy="337" r="54" fill="#16a34a"/>
+  <path d="M494 337h42M515 316v42" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <rect x="622" y="122" width="420" height="98" rx="8" fill="#ecfdf5" stroke="#16a34a" stroke-width="2"/>
+  <text x="654" y="162" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#14532d">Sponsor Button</text>
+  <text x="654" y="194" font-family="Arial, sans-serif" font-size="18" fill="#166534">GitHub Sponsors, Polar, custom links</text>
+  <rect x="622" y="265" width="420" height="98" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="654" y="305" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1e3a8a">Paid Support</text>
+  <text x="654" y="337" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">Clear offer without payment secrets</text>
+  <rect x="622" y="408" width="420" height="98" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="654" y="448" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#78350f">Launch Copy</text>
+  <text x="654" y="480" font-family="Arial, sans-serif" font-size="18" fill="#92400e">GitHub, X, LinkedIn, WeChat</text>
+  <text x="94" y="643" font-family="Arial, sans-serif" font-size="22" fill="#374151">A tiny publishing kit for supportable GitHub skills</text>
+</svg>
+

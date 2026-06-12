@@ -1,0 +1,19 @@
+{
+  "project_name": "Skill Funding Helper",
+  "maintainer": "xffighting",
+  "github": ["xffighting"],
+  "ko_fi": "",
+  "patreon": "",
+  "open_collective": "",
+  "polar": "xffighting",
+  "custom": [
+    "https://github.com/sponsors/xffighting"
+  ],
+  "paid_support": {
+    "enabled": true,
+    "label": "Paid setup support",
+    "url": "https://github.com/sponsors/xffighting",
+    "description": "For maintainers who want help turning a skill repo into a cleaner public release."
+  }
+}
+

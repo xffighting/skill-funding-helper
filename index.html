@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skill Funding Helper</title>
+    <meta name="description" content="A publishing kit for GitHub skill maintainers who want clear sponsor and paid support paths.">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #111827;
+        --muted: #526071;
+        --line: #d7dde6;
+        --paper: #fffdf8;
+        --wash: #f4f7fb;
+        --green: #16a34a;
+        --blue: #2563eb;
+        --yellow: #d97706;
+        --violet: #7c3aed;
+        --red: #dc2626;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        min-height: 100vh;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 16px clamp(20px, 5vw, 72px);
+        border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+        background: rgba(255, 253, 248, 0.94);
+        backdrop-filter: blur(14px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+      }
+
+      .mark {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border-radius: 8px;
+        color: white;
+        background: var(--ink);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .icon-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 38px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 14px;
+        background: white;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+        gap: clamp(28px, 5vw, 72px);
+        align-items: center;
+        padding: clamp(42px, 7vw, 92px) clamp(20px, 5vw, 72px) 52px;
+      }
+
+      .hero > * {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        margin-bottom: 18px;
+        padding: 8px 10px;
+        border: 1px solid #bbf7d0;
+        border-radius: 8px;
+        color: #14532d;
+        background: #ecfdf5;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 820px;
+        margin: 0;
+        font-size: clamp(42px, 6vw, 76px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: clamp(18px, 2vw, 22px);
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 46px;
+        padding: 0 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .button.primary {
+        color: white;
+        background: var(--ink);
+      }
+
+      .button.secondary {
+        border: 1px solid var(--line);
+        background: white;
+      }
+
+      .mockup {
+        border: 2px solid var(--ink);
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 14px 14px 0 #111827;
+        max-width: 100%;
+      }
+
+      .mockup-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 14px;
+        background: var(--ink);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #f87171;
+      }
+
+      .dot:nth-child(2) {
+        background: #fbbf24;
+      }
+
+      .dot:nth-child(3) {
+        background: #4ade80;
+      }
+
+      .mockup-body {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        min-height: 470px;
+      }
+
+      .sidebar {
+        padding: 24px;
+        border-right: 1px solid var(--line);
+        background: #f8fafc;
+      }
+
+      .side-title {
+        margin-bottom: 22px;
+        font-size: 13px;
+        font-weight: 900;
+        color: var(--muted);
+        text-transform: uppercase;
+      }
+
+      .file {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 38px;
+        margin-bottom: 8px;
+        padding: 0 10px;
+        border-radius: 8px;
+        background: white;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+      }
+
+      .panel {
+        padding: 28px;
+      }
+
+      .panel h2,
+      .section h2 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 46px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .panel p,
+      .section p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .terminal {
+        margin-top: 22px;
+        padding: 18px;
+        border-radius: 8px;
+        color: #d1fae5;
+        background: #111827;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 13px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .metric {
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+
+      .metric b {
+        display: block;
+        font-size: 22px;
+      }
+
+      .metric span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .section {
+        padding: 58px clamp(20px, 5vw, 72px);
+      }
+
+      .section.alt {
+        background: var(--wash);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .card {
+        min-height: 190px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 14px;
+        font-size: 18px;
+      }
+
+      .chip {
+        display: inline-grid;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 16px;
+        place-items: center;
+        border-radius: 8px;
+        color: white;
+        font-weight: 900;
+      }
+
+      .green {
+        background: var(--green);
+      }
+
+      .blue {
+        background: var(--blue);
+      }
+
+      .yellow {
+        background: var(--yellow);
+      }
+
+      .violet {
+        background: var(--violet);
+      }
+
+      .red {
+        background: var(--red);
+      }
+
+      .compare {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .repo-box {
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+
+      .repo-box.after {
+        border-color: #86efac;
+        background: #f0fdf4;
+      }
+
+      .repo-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 14px;
+      }
+
+      .repo-line:last-child {
+        border-bottom: 0;
+      }
+
+      .visual {
+        width: 100%;
+        margin-top: 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+
+      .footer {
+        padding: 34px clamp(20px, 5vw, 72px);
+        color: white;
+        background: var(--ink);
+      }
+
+      @media (max-width: 920px) {
+        .hero,
+        .mockup-body,
+        .compare {
+          grid-template-columns: 1fr;
+        }
+
+        .mockup {
+          box-shadow: 8px 8px 0 #111827;
+        }
+
+        .sidebar,
+        .panel {
+          min-width: 0;
+        }
+
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 620px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .nav-links {
+          width: 100%;
+          overflow-x: auto;
+        }
+
+        .hero {
+          padding-top: 32px;
+        }
+
+        .grid,
+        .metrics {
+          grid-template-columns: 1fr;
+        }
+
+        .icon-link {
+          white-space: nowrap;
+        }
+
+        .terminal {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand"><span class="mark">$</span><span>Skill Funding Helper</span></div>
+        <div class="nav-links">
+          <a class="icon-link" href="docs/wechat-article.md">✍ Article</a>
+          <a class="icon-link" href="docs/ui-redesign-notes.md">▣ UI Notes</a>
+          <a class="icon-link" href="skills/skill-funding-helper/SKILL.md">◇ Skill</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <div class="eyebrow">◆ Funding kit for GitHub skills</div>
+          <h1>Make a skill repo supportable in one pass.</h1>
+          <p class="lead">Generate Sponsor Button config, README support copy, paid setup language, launch material, and validation checks without touching payment credentials.</p>
+          <div class="actions">
+            <a class="button primary" href="README.md">▶ Read the repo</a>
+            <a class="button secondary" href="docs/wechat-article.md">✍ WeChat draft</a>
+          </div>
+        </div>
+
+        <div class="mockup" aria-label="Product interface preview">
+          <div class="mockup-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="mockup-body">
+            <aside class="sidebar">
+              <div class="side-title">Generated files</div>
+              <div class="file">◆ FUNDING.yml</div>
+              <div class="file">◆ README block</div>
+              <div class="file">◆ funding.config.json</div>
+              <div class="file">◆ publish-kit</div>
+              <div class="file">◆ validation report</div>
+            </aside>
+            <section class="panel">
+              <h2>From folder to public project</h2>
+              <p>A small skill can feel unfinished when support links and launch copy are missing. This helper gives maintainers a clean default path.</p>
+              <div class="terminal">
+                python3 scripts/skill_funding.py init<br>
+                python3 scripts/skill_funding.py apply<br>
+                python3 scripts/skill_funding.py validate
+              </div>
+              <div class="metrics">
+                <div class="metric"><b>3</b><span>skill paths</span></div>
+                <div class="metric"><b>0</b><span>payment secrets</span></div>
+                <div class="metric"><b>1</b><span>publish kit</span></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <h2>Designed around the maintainer's next decision.</h2>
+        <p>The page now leads with the problem, shows the files people get, and keeps safety boundaries visible before asking anyone to run a command.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="chip green">1</span>
+            <strong>Funding output</strong>
+            <p>Write GitHub-compatible funding config with Sponsors, Polar, Ko-fi, Patreon, and custom links.</p>
+          </article>
+          <article class="card">
+            <span class="chip blue">2</span>
+            <strong>README support</strong>
+            <p>Insert a stable support block between markers so repeated runs stay clean.</p>
+          </article>
+          <article class="card">
+            <span class="chip yellow">3</span>
+            <strong>Launch copy</strong>
+            <p>Generate GitHub release notes, social copy, and article prompts for public launch.</p>
+          </article>
+          <article class="card">
+            <span class="chip violet">4</span>
+            <strong>Skill validation</strong>
+            <p>Check frontmatter, duplicated sponsor markers, funding files, and secret-like mistakes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Before and after for a real skill repository.</h2>
+        <div class="compare">
+          <div class="repo-box">
+            <h3>Before</h3>
+            <div class="repo-line"><span>README.md</span><span>basic</span></div>
+            <div class="repo-line"><span>SKILL.md</span><span>ready</span></div>
+            <div class="repo-line"><span>Support path</span><span>missing</span></div>
+            <div class="repo-line"><span>Launch copy</span><span>missing</span></div>
+          </div>
+          <div class="repo-box after">
+            <h3>After</h3>
+            <div class="repo-line"><span>.github/FUNDING.yml</span><span>added</span></div>
+            <div class="repo-line"><span>README support block</span><span>added</span></div>
+            <div class="repo-line"><span>docs/publish-kit</span><span>added</span></div>
+            <div class="repo-line"><span>Validation command</span><span>passing</span></div>
+          </div>
+        </div>
+        <img class="visual" src="assets/product-flow.svg" alt="Flow from loose skill folder to supportable project">
+      </section>
+
+      <section class="section alt">
+        <h2>Safe by design.</h2>
+        <p>This is not a payment processor. It only writes public repo files, and it treats anything secret-like inside funding files as a validation problem.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="chip red">!</span>
+            <strong>No payment credentials</strong>
+            <p>The config stores public profile names and URLs, not private keys.</p>
+          </article>
+          <article class="card">
+            <span class="chip green">✓</span>
+            <strong>GitHub-native</strong>
+            <p>Output follows the public `.github/FUNDING.yml` convention used by GitHub.</p>
+          </article>
+          <article class="card">
+            <span class="chip blue">↻</span>
+            <strong>Repeatable</strong>
+            <p>README markers make repeated generation predictable.</p>
+          </article>
+          <article class="card">
+            <span class="chip yellow">✍</span>
+            <strong>Shareable</strong>
+            <p>Generated writing assets make the project easier to announce.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Skill Funding Helper is a small publishing kit for supportable GitHub skills.
+    </footer>
+  </body>
+</html>

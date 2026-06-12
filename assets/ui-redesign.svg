@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-label="UI redesign mockup">
+  <rect width="1200" height="780" fill="#eef2f7"/>
+  <rect x="74" y="52" width="1052" height="676" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <rect x="74" y="52" width="1052" height="72" rx="8" fill="#111827"/>
+  <text x="106" y="98" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Skill Funding Helper</text>
+  <rect x="890" y="76" width="92" height="28" rx="6" fill="#16a34a"/>
+  <text x="910" y="96" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">Sponsor</text>
+  <rect x="990" y="76" width="92" height="28" rx="6" fill="#2563eb"/>
+  <text x="1016" y="96" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">Docs</text>
+  <text x="106" y="188" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#111827">Make a skill repo supportable</text>
+  <text x="106" y="228" font-family="Arial, sans-serif" font-size="21" fill="#4b5563">Generate funding files, README support copy, validation checks, and launch material.</text>
+  <rect x="106" y="274" width="470" height="78" rx="8" fill="#111827"/>
+  <text x="130" y="322" font-family="Menlo, monospace" font-size="18" fill="#ffffff">python3 scripts/skill_funding.py apply</text>
+  <rect x="626" y="164" width="418" height="298" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="660" y="212" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Generated outputs</text>
+  <rect x="660" y="244" width="332" height="42" rx="6" fill="#ecfdf5"/>
+  <text x="682" y="272" font-family="Menlo, monospace" font-size="17" fill="#166534">.github/FUNDING.yml</text>
+  <rect x="660" y="302" width="332" height="42" rx="6" fill="#eff6ff"/>
+  <text x="682" y="330" font-family="Menlo, monospace" font-size="17" fill="#1d4ed8">README sponsor block</text>
+  <rect x="660" y="360" width="332" height="42" rx="6" fill="#fffbeb"/>
+  <text x="682" y="388" font-family="Menlo, monospace" font-size="17" fill="#92400e">docs/publish-kit</text>
+  <rect x="106" y="508" width="288" height="126" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="132" y="548" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Clear problem</text>
+  <text x="132" y="584" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">Explain funding before commands.</text>
+  <rect x="456" y="508" width="288" height="126" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="482" y="548" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Visible output</text>
+  <text x="482" y="584" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">Show files people actually get.</text>
+  <rect x="806" y="508" width="288" height="126" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="832" y="548" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Safety boundary</text>
+  <text x="832" y="584" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">No payment secrets, no token storage.</text>
+</svg>
+

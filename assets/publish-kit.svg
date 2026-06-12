@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Publish kit">
+  <rect width="1200" height="720" fill="#fffdf8"/>
+  <text x="72" y="76" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Launch material generated with the repo</text>
+  <g stroke="#1f2937" stroke-width="2">
+    <rect x="76" y="136" width="250" height="390" rx="8" fill="#ecfdf5"/>
+    <rect x="356" y="136" width="250" height="390" rx="8" fill="#eff6ff"/>
+    <rect x="636" y="136" width="250" height="390" rx="8" fill="#fffbeb"/>
+    <rect x="916" y="136" width="208" height="390" rx="8" fill="#f5f3ff"/>
+  </g>
+  <text x="110" y="192" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#14532d">GitHub</text>
+  <text x="110" y="242" font-family="Arial, sans-serif" font-size="18" fill="#166534">Release notes</text>
+  <text x="110" y="282" font-family="Arial, sans-serif" font-size="18" fill="#166534">Repo README</text>
+  <text x="110" y="322" font-family="Arial, sans-serif" font-size="18" fill="#166534">Sponsor Button</text>
+  <text x="390" y="192" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1e3a8a">Social</text>
+  <text x="390" y="242" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">X copy</text>
+  <text x="390" y="282" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">LinkedIn copy</text>
+  <text x="390" y="322" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">Short intro</text>
+  <text x="670" y="192" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#78350f">WeChat</text>
+  <text x="670" y="242" font-family="Arial, sans-serif" font-size="18" fill="#92400e">Longform article</text>
+  <text x="670" y="282" font-family="Arial, sans-serif" font-size="18" fill="#92400e">Image slots</text>
+  <text x="670" y="322" font-family="Arial, sans-serif" font-size="18" fill="#92400e">Product story</text>
+  <text x="950" y="192" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#4c1d95">Docs</text>
+  <text x="950" y="242" font-family="Arial, sans-serif" font-size="18" fill="#6d28d9">Checklist</text>
+  <text x="950" y="282" font-family="Arial, sans-serif" font-size="18" fill="#6d28d9">UI notes</text>
+  <text x="950" y="322" font-family="Arial, sans-serif" font-size="18" fill="#6d28d9">Quality report</text>
+  <rect x="76" y="590" width="1048" height="64" rx="8" fill="#111827"/>
+  <text x="110" y="631" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">The point is not more files. The point is fewer excuses before publishing.</text>
+</svg>
+

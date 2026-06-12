@@ -1,0 +1,24 @@
+{
+  "project_name": "My Useful Skill",
+  "maintainer": "your-name",
+  "github": ["your-github-user"],
+  "patreon": "",
+  "open_collective": "",
+  "ko_fi": "",
+  "tidelift": "",
+  "community_bridge": "",
+  "liberapay": "",
+  "issuehunt": "",
+  "otechie": "",
+  "custom": [
+    "https://example.com/support",
+    "https://example.com/paid-support"
+  ],
+  "paid_support": {
+    "enabled": true,
+    "label": "Paid implementation support",
+    "url": "https://example.com/support",
+    "description": "For teams that want help adapting this skill to their own workflow."
+  }
+}
+

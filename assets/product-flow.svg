@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Product flow">
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <text x="64" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">From loose skill folder to supportable project</text>
+  <g fill="#ffffff" stroke="#1f2937" stroke-width="2">
+    <rect x="72" y="142" width="260" height="390" rx="8"/>
+    <rect x="470" y="142" width="260" height="390" rx="8"/>
+    <rect x="868" y="142" width="260" height="390" rx="8"/>
+  </g>
+  <text x="112" y="192" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Before</text>
+  <text x="112" y="242" font-family="Menlo, monospace" font-size="18" fill="#374151">README.md</text>
+  <text x="112" y="280" font-family="Menlo, monospace" font-size="18" fill="#374151">SKILL.md</text>
+  <text x="112" y="318" font-family="Menlo, monospace" font-size="18" fill="#9ca3af">no support path</text>
+  <text x="112" y="356" font-family="Menlo, monospace" font-size="18" fill="#9ca3af">no launch copy</text>
+  <text x="510" y="192" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Run helper</text>
+  <rect x="510" y="236" width="180" height="44" rx="6" fill="#111827"/>
+  <text x="532" y="264" font-family="Menlo, monospace" font-size="16" fill="#ffffff">init</text>
+  <rect x="510" y="304" width="180" height="44" rx="6" fill="#111827"/>
+  <text x="532" y="332" font-family="Menlo, monospace" font-size="16" fill="#ffffff">apply</text>
+  <rect x="510" y="372" width="180" height="44" rx="6" fill="#111827"/>
+  <text x="532" y="400" font-family="Menlo, monospace" font-size="16" fill="#ffffff">validate</text>
+  <text x="908" y="192" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">After</text>
+  <text x="908" y="242" font-family="Menlo, monospace" font-size="18" fill="#16a34a">.github/FUNDING.yml</text>
+  <text x="908" y="280" font-family="Menlo, monospace" font-size="18" fill="#2563eb">README support block</text>
+  <text x="908" y="318" font-family="Menlo, monospace" font-size="18" fill="#d97706">docs/publish-kit</text>
+  <text x="908" y="356" font-family="Menlo, monospace" font-size="18" fill="#7c3aed">validation report</text>
+  <path d="M350 338h92" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M430 322l18 16-18 16" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M748 338h92" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+  <path d="M828 322l18 16-18 16" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="72" y="590" width="1056" height="70" rx="8" fill="#ecfdf5" stroke="#16a34a" stroke-width="2"/>
+  <text x="104" y="634" font-family="Arial, sans-serif" font-size="24" fill="#14532d">No payment processing, no secrets, only public repo files.</text>
+</svg>
+
