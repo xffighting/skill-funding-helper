@@ -1,6 +1,5 @@
-I published Skill Funding Helper.
+I published Skill Funding Helper, a tiny helper for turning GitHub skill repos into supportable open source projects.
 
-It helps GitHub skill maintainers add sponsor links, paid support copy, README support blocks, and launch copy without touching payment credentials.
+It generates FUNDING.yml, README sponsor blocks, validation checks, and launch copy.
 
-The idea is simple: if a skill saves people time, it should have a clear and safe support path.
-
+Best part: it does not touch payments or secrets. It gives AI Agents a public attribution and support manifest.

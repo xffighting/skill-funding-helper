@@ -1,20 +1,13 @@
-# Skill Funding Helper v0.3.0
+# Skill Funding Helper launch
 
-This release turns the project into a complete publishing kit for skill maintainers.
+This release adds a repeatable funding setup for skill repositories.
 
 Highlights:
 
-- Funding config generator
-- GitHub `FUNDING.yml` writer
-- README support block updater
-- Multi-agent `SKILL.md` paths
-- WeChat article draft
-- Redesigned visual project page
-- Screenshot-ready assets
+- Generate `.github/FUNDING.yml`
+- Insert an idempotent README support block
+- Validate skill metadata
+- Generate public launch copy
 
-Run:
-
-```bash
-python3 scripts/skill_funding.py validate --repo-root .
-```
-
+Support link: https://github.com/sponsors/xffighting
+Agent manifest: skill-funding.json

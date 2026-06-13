@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skill Funding Helper</title>
-    <meta name="description" content="A publishing kit for GitHub skill maintainers who want clear sponsor and paid support paths.">
+    <meta name="description" content="A publishing kit for GitHub skill maintainers who want AI Agent attribution, support routing, and original-author revenue paths.">
     <style>
       :root {
         color-scheme: light;
@@ -454,9 +454,9 @@
 
       <section class="hero">
         <div>
-          <div class="eyebrow">◆ Funding kit for GitHub skills</div>
-          <h1>Make a skill repo supportable in one pass.</h1>
-          <p class="lead">Generate Sponsor Button config, README support copy, paid setup language, launch material, and validation checks without touching payment credentials.</p>
+          <div class="eyebrow">◆ Agent-readable funding for skills</div>
+          <h1>Let AI Agents route value back to skill authors.</h1>
+          <p class="lead">Generate attribution, support routes, pay-per-use policy, paid setup language, launch material, and validation checks without touching payment credentials.</p>
           <div class="actions">
             <a class="button primary" href="README.md">▶ Read the repo</a>
             <a class="button secondary" href="docs/wechat-article.md">✍ WeChat draft</a>
@@ -472,15 +472,15 @@
           <div class="mockup-body">
             <aside class="sidebar">
               <div class="side-title">Generated files</div>
+              <div class="file">◆ skill-funding.json</div>
               <div class="file">◆ FUNDING.yml</div>
               <div class="file">◆ README block</div>
-              <div class="file">◆ funding.config.json</div>
               <div class="file">◆ publish-kit</div>
               <div class="file">◆ validation report</div>
             </aside>
             <section class="panel">
-              <h2>From folder to public project</h2>
-              <p>A small skill can feel unfinished when support links and launch copy are missing. This helper gives maintainers a clean default path.</p>
+              <h2>From folder to agent contract</h2>
+              <p>A small skill needs more than a README. This helper tells Agents who made it, how to credit it, and when to show support or paid-use routes.</p>
               <div class="terminal">
                 python3 scripts/skill_funding.py init<br>
                 python3 scripts/skill_funding.py apply<br>
@@ -488,8 +488,8 @@
               </div>
               <div class="metrics">
                 <div class="metric"><b>3</b><span>skill paths</span></div>
+                <div class="metric"><b>4</b><span>revenue routes</span></div>
                 <div class="metric"><b>0</b><span>payment secrets</span></div>
-                <div class="metric"><b>1</b><span>publish kit</span></div>
               </div>
             </section>
           </div>
@@ -497,13 +497,13 @@
       </section>
 
       <section class="section alt">
-        <h2>Designed around the maintainer's next decision.</h2>
-        <p>The page now leads with the problem, shows the files people get, and keeps safety boundaries visible before asking anyone to run a command.</p>
+        <h2>Designed around the Agent's next decision.</h2>
+        <p>The page now leads with attribution, shows the machine-readable manifest, and keeps safety boundaries visible before any support or paid-use route appears.</p>
         <div class="grid">
           <article class="card">
             <span class="chip green">1</span>
-            <strong>Funding output</strong>
-            <p>Write GitHub-compatible funding config with Sponsors, Polar, Ko-fi, Patreon, and custom links.</p>
+            <strong>Agent manifest</strong>
+            <p>Write `skill-funding.json` with author, attribution, support URL, and paid-use policy.</p>
           </article>
           <article class="card">
             <span class="chip blue">2</span>
@@ -512,8 +512,8 @@
           </article>
           <article class="card">
             <span class="chip yellow">3</span>
-            <strong>Launch copy</strong>
-            <p>Generate GitHub release notes, social copy, and article prompts for public launch.</p>
+            <strong>Revenue routes</strong>
+            <p>Describe tips, pay per use, paid support, and commercial licensing without handling payment secrets.</p>
           </article>
           <article class="card">
             <span class="chip violet">4</span>
@@ -524,20 +524,21 @@
       </section>
 
       <section class="section">
-        <h2>Before and after for a real skill repository.</h2>
+        <h2>Before and after for an Agent-used skill.</h2>
         <div class="compare">
           <div class="repo-box">
             <h3>Before</h3>
             <div class="repo-line"><span>README.md</span><span>basic</span></div>
             <div class="repo-line"><span>SKILL.md</span><span>ready</span></div>
+            <div class="repo-line"><span>Author attribution</span><span>missing</span></div>
             <div class="repo-line"><span>Support path</span><span>missing</span></div>
             <div class="repo-line"><span>Launch copy</span><span>missing</span></div>
           </div>
           <div class="repo-box after">
             <h3>After</h3>
+            <div class="repo-line"><span>skill-funding.json</span><span>added</span></div>
             <div class="repo-line"><span>.github/FUNDING.yml</span><span>added</span></div>
             <div class="repo-line"><span>README support block</span><span>added</span></div>
-            <div class="repo-line"><span>docs/publish-kit</span><span>added</span></div>
             <div class="repo-line"><span>Validation command</span><span>passing</span></div>
           </div>
         </div>
@@ -546,7 +547,7 @@
 
       <section class="section alt">
         <h2>Safe by design.</h2>
-        <p>This is not a payment processor. It only writes public repo files, and it treats anything secret-like inside funding files as a validation problem.</p>
+        <p>This is not a payment processor. It only writes public repo files, and it treats anything secret-like inside funding or Agent manifest files as a validation problem.</p>
         <div class="grid">
           <article class="card">
             <span class="chip red">!</span>
