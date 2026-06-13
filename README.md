@@ -118,6 +118,7 @@ This makes repeated runs idempotent and keeps the rest of your README untouched.
 ## Docs
 
 - [公众号文章](docs/wechat-article.md)
+- [Project introduction / 项目介绍](docs/project-introduction-bilingual.md)
 - [Agent revenue logic](docs/agent-revenue-logic.md)
 - [UI redesign notes](docs/ui-redesign-notes.md)
 - [Launch checklist](docs/launch-checklist.md)
